@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the card on screen */
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #f5f7fb;
+}
+
+/* Profile card layout using GRID */
+.card {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 320px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* Image section */
+.card-image {
+    display: flex;              /* FLEXBOX used */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;         /* for badge */
+}
+
+.card-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Badge styling */
+.badge {
+    position: absolute;         /* POSITION used */
+    top: 20px;
+    right: 90px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+/* Card content styling */
+.card-content {
+    display: flex;                 /* FLEXBOX used */
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin-bottom: 5px;
+}
+
+.card-content h4 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer section */
+.card-footer {
+    display: flex;                 /* FLEXBOX used */
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Stats row */
+.stats {
+    display: flex;                 /* FLEXBOX used */
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 18px;
+}
+/* Follow button styling */
+button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5848e5;
+    transform: scale(1.05);
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
